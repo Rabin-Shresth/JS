@@ -1,0 +1,40 @@
+:root {
+    --watchbox: crimson;
+    --watchboxaft: darkgrey;
+    --button: grey;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: var(--watchbox);
+    color: aliceblue;
+}
+
+.watch {
+    text-align: center;
+    box-sizing: border-box;
+    background-color: var(--watchbox);
+    width: 100%;
+    max-width: 400px;
+    margin: 4rem auto;
+    padding: 1rem 2rem;
+    border: 3px solid gainsboro;
+    border-radius: 5px 20px;
+}
+
+.time {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
