@@ -15,6 +15,20 @@ body {
     color: aliceblue;
 }
 
+.secs1 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 4rem auto;
+    padding: 2rem 2rem;
+    border-radius: 5px 20px;
+    margin-bottom: -2.5rem;
+}
+
 .watch {
     text-align: center;
     box-sizing: border-box;
