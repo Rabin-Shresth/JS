@@ -24,7 +24,7 @@ const handleWin = (letter) => {
     } else {
         status_div.innerHTML = `<span>${winner} Has WON</span>`;
     }
-}
+};
 
 
 const checkGameStatus = () => {
@@ -103,7 +103,7 @@ const checkGameStatus = () => {
             status_div.innerHTML = `<span>${oSymbol} is next</span>`;
         }
     }
-}
+};
 
 
 // event handlers
@@ -118,12 +118,12 @@ const handleReset = () => {
         cellDiv.classList.remove('won');
 
     }
-}
+};
 
 const handleCellClick = (e) => {
     const classList = e.target.classList;
 
-    if (classList[1] === 'X' || classList[1] === 'O') {
+    if (!gameIsLive || classList[1] === 'X' || classList[1] === 'O') {
         return;
     }
     //yo condition le.. game-cell ko individual value ma x or o concat garxa
@@ -136,7 +136,7 @@ const handleCellClick = (e) => {
         checkGameStatus();
     }
 
-}
+};
 
 // event listeners
 
@@ -145,4 +145,4 @@ reset_btn.addEventListener('click', handleReset);
 for (const cellDiv of cell_divs) {
     // Above loop will loop through each element of cell_divs and store it in cellDiv
     cellDiv.addEventListener('click', handleCellClick);
-}
+};
