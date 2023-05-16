@@ -4,3 +4,41 @@
     padding: 0;
     font-family: sans-serif;
 }
+
+.container1 {
+    float: left;
+    background: #BCD2E8;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1 .clock {
+    width: 50vmin;
+    height: 50vmin;
+    background-color: #008080;
+    border-radius: 50%;
+    border: 2vmin solid #40B5AD;
+    box-shadow: 0 0 20px 1px black;
+}
+
+svg {
+    height: 100%;
+    width: 100%;
+}
+
+.notes {
+    float: left;
+    background: green;
+    width: 40%;
+    height: 100vh;
+}
+
+.todo {
+    float: right;
+    background: blue;
+    width: 30%;
+    height: 100vh;
+}
