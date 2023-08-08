@@ -82,7 +82,9 @@ main hr{
 }
 
 .aboutSection h1{
+    text-align: center;
     font-size: 1.5rem;
+    line-height: 10px;
 }
 
 .aboutSection .line{
@@ -123,11 +125,21 @@ main hr{
     height: 90vh;
 }
 
+
+.secondSection .text-gray{
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    color: gray;
+    line-height: 10px;
+    padding-bottom: 12px ;
+}
+
 .secondSection h1{
     font-size: 1.5rem;
-}
-.text-gray{
-    color: gray;
+    text-align: center;
+    line-height: 10px;
+    padding-top: 12px;
 }
 
 .secondSection .box{
@@ -148,11 +160,26 @@ main hr{
 .hardSkills,.softSkills{
     display: inline-block;
     width: 35%;
-    background-color: blue;
+    /* background-color: blue; */
     justify-content: center;
     align-items: center;
+    text-align: center;
+    height: 60px;
+    font-size: 1.2rem;
 }
 
+.hardSkills  hr, .softSkills hr{
+    margin-top: 15px;
+    box-shadow: 0 0px 15px 5px rgb(153,153,226);
+}
+
+
+ul{
+    font-size: 1.1rem;
+    text-align:start;
+    margin-left: 80px;
+    line-height: 2.6rem;
+}
 
 .image-top{
     position: relative;
@@ -180,16 +207,75 @@ footer{
     height: 35vh;
 }
 
-.footer{
+footer h4{
+    text-align: center;
+    padding-top: 30px;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 10px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.wrapper{
     display: flex;
-    padding: 30px 130px;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer ul{
-    list-style: none;
+.icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    /* background-color: black; */
+    margin: 25px;
+    text-align: center;
+    font-size: 25px;
+    /* line-height: 60px; */
+    overflow: hidden;
+    box-shadow: 0px 5px 5px rgb(153,153,226);
+    transition: all 0.2s ease-out;
 }
 
-.footer>div{
-    width: 220px;
+.icon:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+.icon:hover i{
+    color: white;
+}
+
+.icon .fa-facebook{
+    color: #1877F2;
+}
+
+.fb:hover{
+    background-color: #1877F2;
+}
+
+.gh:hover{
+    background-color: black;
+}
+
+.ins:hover{
+    background-color: #5851DB;
+}
+
+.icon .fa-linkedin{
+    color: #0077B5;
+}
+
+.link:hover{
+    background-color: #0077B5;
+}
+
+.link-no-underline {
+    text-decoration: none;
+    color: white;
+}
+
+footer p{
+    text-align: center;
+    padding: 20px 0;
+    font-size: smaller;
 }
