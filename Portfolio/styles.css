@@ -9,6 +9,7 @@ body{
     background-color: #27374D;
     color: white;
     font-family: 'Poppins', sans-serif;
+    height: 100%;
 }
 
 nav{
@@ -87,7 +88,7 @@ main hr{
 .aboutSection{
     max-width: 85vw;
     margin: auto;
-    height: 92vh;
+    height: 100%;
 }
 
 .aboutSection h1{
@@ -112,7 +113,7 @@ main hr{
 
 .floatingImage img{
     width: 70%;
-    margin: 40px 50px;
+    margin: 35px 50px;
     object-fit: cover;
     animation: float 3s ease-in infinite;
 }
@@ -135,7 +136,7 @@ main hr{
 .secondSection{
     max-width: 85vw;
     margin: auto;
-    height: 100vh;
+    height: 100%; 
 }
 
 
@@ -155,29 +156,22 @@ main hr{
     padding-top: 12px;
 }
 
-.secondSection .box{
-    background-color: rgb(153,153,226);
-    width: 85vw;
-    height: 2px;
-    margin: 30px 0;
-    display: flex;
-}
 
 .container{
-    display: flex;
+    display: -webkit-box;
     align-items: center;
     justify-content: space-around;
-    /* height: 100vh; */
+    /* flex-wrap: wrap; */
+    height: 100%;
+    padding-bottom: 80px;
 }
 
-.hardSkills,.softSkills{
-    display: inline-block;
-    width: 45%;
-    /* background-color: blue; */
-    justify-content: center;
+.hardSkills, .softSkills{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 50%;
     text-align: center;
-    height: 60px;
     font-size: 1.2rem;
 }
 
@@ -185,6 +179,7 @@ main hr{
 .hardSkills  hr, .softSkills hr{
     margin-top: 15px;
     box-shadow: 0 0px 15px 5px rgb(153,153,226);
+    width: 30%;
 }
 
 
@@ -221,7 +216,7 @@ ul{
 
 footer{
     background-color: #142742;
-    height: 35vh;
+    height: 100%;
 }
 
 footer h4{
@@ -297,4 +292,11 @@ footer p{
     font-size: smaller;
 }
 
-
+@media screen and (max-width: 1306px) {
+    body{
+        background-color: red;
+    }
+    .leftSection{
+        font-size: 2.2rem;
+    }
+}
