@@ -77,22 +77,24 @@ main hr{
 .firstSection{
     display: flex;
     justify-content: space-around;
-    margin: 123px 0;
+    margin: 123px 0px;
     align-items: center;
     padding-bottom: 50px;
+    padding-left: 80px;
 }   
 
 .firstSection > div{
-    width: 35%;
+    width: 50%;
 }
 
 .leftSection{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
 }
 
 .rightSection img{
-    width: 100%;
-    margin: -30px 0;
+    max-width: 45vw;
+    margin: -30px 0px;
+    padding-right: 20px;
 }
 
 .purple{
@@ -311,12 +313,38 @@ footer p{
 }
 
 @media screen and (max-width: 1306px) {
-    body{
-        background-color: red;
+    .leftSection{
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 1143px) {
+    .leftSection{
+        font-size: 2.1rem;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .firstSection{
+        flex-direction: column-reverse;
     }
     .leftSection{
-        font-size: 2.2rem;
+        font-size: 1.8rem;
+        padding-top: 80px;
+        margin-bottom: -120px;
     }
+    .rightSection{
+        margin-top: -50px;
+        margin-right: 90px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .leftSection{
+        font-size: 0.9rem;
+        margin-right: 60px;
+    }
+    
 }
 
 @media(max-width: 990px) {
