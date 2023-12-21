@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Rabin Shrestha</title>
+    <script src="https://kit.fontawesome.com/e813c3bc63.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">SABDA-NER</a> <!-- # represents the top of the current page-->
+        <nav class="navbar">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="#first" class="active">Home</a>
+            <a href="#about">About NER</a>
+            <a href="#skills">Our Model</a>
+            <a href="#social">Links</a>
+        </nav>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="firstSection" id="first">
+            <div class="form__group">
+                <input type="text" class="form__input" id="name" placeholder="Enter Sentence" required="" />
+                <label class="form__label">Enter Sentence</label>
+            </div>
+            <button class="button-4" role="button">Enter</button>
+        </section>
+        <section>
+            <div class="result-section">Result Section</div>
+        </section>
+        <section class="aboutSection" id="about">
+            <hr>
+            <h1 data-aos="fade-down" data-aos-duration="800">About NER</h1>
+            <hr>
+            <!-- <div class="line"></div> -->
+            <div class="aboutContainer">
+                <div class="floatingImage" data-aos="fade-left">
+                    <img src="imgCS.png" alt="developer">
+                </div>
+                <div class="aboutMe" data-aos="fade-right">
+                    <p align="center">
+                        Hey folks, Since you encountered intentionally or accidentally here I just want to provide you a brief idea about <span class="who">"Who is Rabin Shrestha ?"</span>. Rabin is a Computer Science undergraduate and mostly a boring tech geek. He enjoys watching tons of techies resources, coding with a cup of coffee and music on his earphones. Since it is not the Skill Section, let me tell you he is fond of playing guitar.<p align="center">(plays to let go off his stress).</p>
+                    </p> 
+                </div>
+            </div>
+        </section>
+        <section class="secondSection" id="skills">
+            <hr>
+            <span class="text-gray" data-aos="fade-down" data-aos-duration="800">Our Model</span>
+        <h1 data-aos="fade-down" data-aos-duration="800">SABDA-NER</h1>
+            <hr>
+        <!-- <div class="box"></div> -->
+            <div class="container">
+                <div class="hardSkills">
+                    Hard Skills
+                    <hr data-aos="fade-left">
+                    <ul data-aos="fade-left" >
+                        <li>Interests : Web Development, Data Science, Deep Learning, Machine Learning, Data Mining</li>
+                        <li>Languages : C/C++, JavaScript, Python, Dart</li>
+                        <li>FrameWorks : Flutter, Wordpress, Bootstrap, Tailwind</li>
+                        <li>Libraries : ReactJs, Nltk, Numpy etc.</li>
+                        <li>Database : MS-SQL, Firebase, SQLlite</li>
+                    </ul>
+                </div>
+                <div class="softSkills">
+                    Soft Skills
+                    <hr data-aos="fade-right">
+                    <ul data-aos="fade-right">
+                        <li>Decision Making</li>
+                        <li>Problem Solving</li>
+                        <li>Team Player</li>
+                        <li>Optimistic</li>
+                        <li>Punctual</li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    </main>
+    <section>
+        <footer id="social">
+            <h4>Check out our Github</h4>
+                <a href="https://github.com/Rabin-Shresth" class="link-no-underline" target="_blank">
+                    <div class="icon gh">
+                        <i class="fa-brands fa-github"></i>
+                        <span></span>
+                    </div>
+                </a>    
+                <!-- <a href="https://www.linkedin.com/in/rabin-shrestha-a0669a274/" class="link-no-underline" target="_blank">
+                    <div class="icon link">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </div>
+                </a> -->
+            </div>
+            <p>Copyright © SABDA-NER | 076BCT | </p>
+        </footer>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['CS Undergraduate.', 'Graphic Designer.','Wordpress Developer.','AI/ML Enthusiast.','Web Developer.' ],
+          typeSpeed: 50,
+        //   loop: true,
+        });
+      </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            duration:2000,
+          });
+        </script>
+    <script src="main.js"></script>
+</body>
+</html>
